@@ -35,7 +35,7 @@ gau -subs $domain | cut -d / -f 3 | sort -u | tee subs_gau.txt
 
 # Run subenum and save the output to subs_subenum.txt
 print_title "Running subenum..."
-subenum -d $domain | tee subs_subenum.txt
+/home/ahmed/hacking/tools/SubEnum/subenum.sh -d $domain | tee subs_subenum.txt
 
 # Run crt function and save the output to subs_crt.txt
 print_title "Running crt..."
